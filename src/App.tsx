@@ -9,6 +9,7 @@ import HospitalDashboard from "./pages/HospitalDashboard";
 import CoordinatorDashboard from "./pages/CoordinatorDashboard";
 import NotFound from "./pages/NotFound";
 import Otp from "./pages/otp";
+import UserProfile from "./pages/UserProfile";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/recipient-dashboard" element={<RecipientDashboard />} />
         <Route path="/hospital-dashboard" element={<HospitalDashboard />} />
         <Route path="/coordinator-dashboard" element={<CoordinatorDashboard />} />
+        <Route path="/profile" element={<UserProfile />} />
 
         {/* ❌ Move this last so it doesn't catch dashboard routes */}
         <Route path="*" element={<NotFound />} />
